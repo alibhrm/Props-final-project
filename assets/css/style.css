@@ -1,0 +1,99 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #1f6f8b;
+  --primary-font: "Noto Sans JP", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.d-flex {
+  display: flex;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.align-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+/* menu and header style */
+header {
+  background-image: url(../images/hero_bg_1.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+.site-nav {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, 10px);
+}
+header > nav {
+  text-transform: capitalize;
+  width: 40%;
+  background-color: white;
+  margin: 0 auto;
+  border-radius: 4px;
+  box-shadow: 0 15px 30px -15px rgb(0 0 0 / 30%);
+  padding: 20px 30px;
+}
+
+header > nav > .logo a {
+  font-size: 24px;
+  color: var(--primary-color);
+  font-weight: 700;
+  font-family: var(--primary-font);
+}
+
+header > nav > .menu li {
+  list-style: none;
+}
+header > nav > .menu a {
+  margin: 0 10px;
+  font-weight: 100;
+  font-family: var(--primary-font);
+  color: rgb(31, 31, 31);
+}
+header > nav > .menu a:hover {
+  color: var(--primary-color);
+  transition: 0.4s;
+}
+.slogan > h1 {
+  font-family: var(--primary-font);
+  color: white;
+  font-size: 38px;
+  text-align: center;
+}
+.slogan > p{ 
+    text-align: center;
+    color: white;
+    width: 50%;
+    margin: 0 auto;
+}
+.slogan > .search-box{
+    display: inline-block;
+    padding: 18px;
+    border: none;
+    width: 60%;
+    border-radius: 30px;
+    margin: 28px auto;
+}
+.slogan > .search-button{
+    display: inline-block;
+    padding: 18px;
+    border: none;
+    width: 15%;
+    border-radius: 30px;
+    margin: 28px 0;
+    background:linear-gradient(to left , #E02A82, #772A90);
+    color: white;
+    font-size: 18px;
+}
