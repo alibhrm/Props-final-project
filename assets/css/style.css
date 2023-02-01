@@ -29,6 +29,7 @@ header {
   background-image: url(../images/hero_bg_1.jpg);
   background-size: cover;
   height: 100vh;
+  
 }
 .site-nav {
   position: absolute;
@@ -57,7 +58,6 @@ header > nav > .menu li {
   list-style: none;
 }
 header > nav > .menu a {
-  margin: 0 10px;
   font-weight: 100;
   font-family: var(--primary-font);
   color: rgb(31, 31, 31);
@@ -83,22 +83,42 @@ header > nav > .menu a:hover {
     width: 50%;
     margin: 0 auto;
 }
-.slogan > .search-box{
-    display: inline-block;
+.slogan > form >.search-box{
+    
     padding: 18px;
     border: none;
-    width: 60%;
+width: 500px;
     border-radius: 30px;
     margin: 28px auto;
 }
-.slogan > .search-button{
-    display: inline-block;
+.slogan > form >.search-button{
+ 
     padding: 18px;
     border: none;
-    width: 15%;
+    
     border-radius: 30px;
-    margin: 28px 0;
+    margin: 28px auto;
     background:linear-gradient(to left , #E02A82, #772A90);
     color: white;
     font-size: 18px;
+}
+.slogan{
+    max-width: 600px;
+    text-align: center !important;
+}
+@media both  and ( max-width: 1024px) {
+    header > nav{
+width: 100%;
+    }
+}
+@media both and (min-width: 1025px ),( max-width: 1440px) {
+    header > nav{
+width: 60%;    
+    }
+  
+}
+@media both and (max-width:768px) {
+    header > nav > .menu a {
+        grid-column: span 5;
+    }
 }
