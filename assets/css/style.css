@@ -8,10 +8,9 @@
 :root {
   --primary-color: #1f6f8b;
   --primary-font: "Noto Sans JP", sans-serif;
+  --secondary-color: #ececec;
 }
-a {
-  text-decoration: none;
-}
+
 .d-flex {
   display: flex;
 }
@@ -24,101 +23,274 @@ a {
 .justify-center {
   justify-content: center;
 }
-/* menu and header style */
+.container {
+  max-width: 1296px;
+  margin: 0 auto;
+}
+.flex-end {
+  justify-content: flex-end;
+}
+.d-grid {
+  display: grid;
+}
+/* editing menu */
+.nav-bar > .logo {
+  text-transform: capitalize;
+  font-family: var(--primary-font);
+  color: var(--primary-color);
+  font-size: 24px;
+  font-weight: 700;
+}
+.menu ul {
+  list-style: none;
+  text-transform: capitalize;
+  font-family: var(--primary-font);
+  grid-template-columns: repeat(5, 5fr);
+  gap:30px;
+}
+.menu a {
+  color: rgb(54, 54, 54);
+  text-decoration: none;
+}
+.menu a:hover {
+  color: var(--primary-color);
+}
+.nav-bar {
+  padding-top: 10px;
+  grid-template-columns: repeat(2, 3fr);
+  background-color: var(--secondary-color);
+  padding: 30px 20px;
+  box-shadow: 0 15px 30px -15px rgb(0 0 0 / 30%);
+}
 header {
-  background-image: url(../images/hero_bg_1.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("../images/hero_bg_1.jpg");
   background-size: cover;
   height: 100vh;
-  
+  overflow-x: hidden;
 }
-.site-nav {
-  position: absolute;
-  top: 5%;
-  left: 50%;
-  transform: translate(-50%, 10px);
-}
-header > nav {
-  text-transform: capitalize;
-  width: 40%;
-  background-color: white;
-  margin: 0 auto;
-  border-radius: 4px;
-  box-shadow: 0 15px 30px -15px rgb(0 0 0 / 30%);
-  padding: 20px 30px;
-}
-/* logo */
-header > nav > .logo a {
-  font-size: 24px;
-  color: var(--primary-color);
-  font-weight: 700;
-  font-family: var(--primary-font);
-}
-/* menu */
-header > nav > .menu li {
+/* dropdown */
+.drop-down{
+  visibility: hidden;
   list-style: none;
-}
-header > nav > .menu a {
-  font-weight: 100;
+  text-transform: capitalize;
   font-family: var(--primary-font);
-  color: rgb(31, 31, 31);
+  background-color: var(--secondary-color);
+  position: absolute;
+  z-index: 999;
+  text-align: left;
+  box-shadow: 0 2px 10px -2px rgb(0 0 0 / 10%);
+  padding: 20px 0;
+  margin-top: 20px;
+  margin-left: 0;
+  transition: 0.2s 0s;
 }
-header > nav > .menu a:hover {
-  color: var(--primary-color);
-  transition: 0.4s;
+.drop-down > li{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  min-width: 180px;
 }
-.menu > ul {
-    display: grid;
-    grid-template-columns:repeat(5, 1fr) ;
+.drop-down > li > a{
+  padding: 5px 20px;
 }
-/* slogan */
+ul li:hover>ul,ul{
+   visibility: visible;
+}
+.item{
+  padding: 3px 0 15px 0;
+}
+/* editing slogan */
 .slogan > h1 {
   font-family: var(--primary-font);
-  color: white;
-  font-size: 38px;
+  color: var(--secondary-color);
   text-align: center;
 }
-.slogan > p{ 
-    text-align: center;
-    color: white;
-    width: 50%;
-    margin: 0 auto;
+.slogan input:nth-child(1) {
+  display: inline-block;
+  padding: 20px 20px;
+  width: 65%;
+  border: none;
+  border-radius: 30px;
 }
-.slogan > form >.search-box{
-    
-    padding: 18px;
-    border: none;
-width: 500px;
-    border-radius: 30px;
-    margin: 28px auto;
+.slogan input:nth-child(2) {
+  display: inline-block;
+  padding: 20px 60px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(to left, #e02a82, #772a90);
+  color: var(--secondary-color);
+  font-size: 18px;
 }
-.slogan > form >.search-button{
+.slogan input:nth-child(2):hover{
+  cursor: pointer;
+  position: relative;
+  bottom: 2px;
+}
+.slogan {
+  height: 500px;
+  align-content: center;
+  gap: 30px;
+}
+.slogan p {
+  color: var(--secondary-color);
+  width: 600px;
+  text-align: center;
+  font-family: var(--primary-font);
+}
+.slogan a{
+  color:var(--secondary-color);
+  font-family: var(--primary-font);
+  display: block;
+  text-align: center;
+  text-transform: capitalize;
+}
+#menuToggle,#menu{
+  visibility: hidden;
+}
+@media (max-width:425px) {
+  .menu>ul{
+    visibility: hidden;
+  }
+    #menuToggle
+{
+  visibility: visible;
+  display: block;
+  position: absolute;
+  top: 35px;
+  left: 321px;
  
-    padding: 18px;
-    border: none;
-    
-    border-radius: 30px;
-    margin: 28px auto;
-    background:linear-gradient(to left , #E02A82, #772A90);
-    color: white;
-    font-size: 18px;
-}
-.slogan{
-    max-width: 600px;
-    text-align: center !important;
-}
-@media both  and ( max-width: 1024px) {
-    header > nav{
-width: 100%;
-    }
-}
-@media both and (min-width: 1025px ),( max-width: 1440px) {
-    header > nav{
-width: 60%;    
-    }
+  z-index: 1;
   
+  -webkit-user-select: none;
+  user-select: none;
 }
-@media both and (max-width:768px) {
-    header > nav > .menu a {
-        grid-column: span 5;
-    }
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.3s ease;
 }
+
+#menuToggle a:hover
+{
+  color: tomato;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+  }
