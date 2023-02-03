@@ -147,7 +147,8 @@ ul li:hover>ul,ul{
 #menuToggle,#menu{
   visibility: hidden;
 }
-@media (max-width:425px) {
+/* menu responsive */
+/* @media (max-width:425px) {
   .menu>ul{
     visibility: hidden;
   }
@@ -191,15 +192,15 @@ ul li:hover>ul,ul{
   cursor: pointer;
   
   opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
+  /*z-index: 2; /* and place it over the hamburger */
   
-  -webkit-touch-callout: none;
-}
+  /*-webkit-touch-callout: none;
+}*/
 
 /*
  * Just a quick hamburger
  */
-#menuToggle span
+/*#menuToggle span
 {
   display: block;
   width: 33px;
@@ -233,7 +234,7 @@ ul li:hover>ul,ul{
  * Transform all the slices of hamburger
  * into a crossmark.
  */
-#menuToggle input:checked ~ span
+/*#menuToggle input:checked ~ span
 {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
@@ -243,7 +244,7 @@ ul li:hover>ul,ul{
 /*
  * But let's hide the middle one.
  */
-#menuToggle input:checked ~ span:nth-last-child(3)
+/*#menuToggle input:checked ~ span:nth-last-child(3)
 {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
@@ -252,7 +253,7 @@ ul li:hover>ul,ul{
 /*
  * Ohyeah and the last one should go the other direction
  */
-#menuToggle input:checked ~ span:nth-last-child(2)
+/*#menuToggle input:checked ~ span:nth-last-child(2)
 {
   transform: rotate(-45deg) translate(0, -1px);
 }
@@ -261,7 +262,7 @@ ul li:hover>ul,ul{
  * Make this absolute positioned
  * at the top left of the screen
  */
-#menu
+/*#menu
 {
   position: absolute;
   width: 300px;
@@ -274,7 +275,7 @@ ul li:hover>ul,ul{
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
   
-  transform-origin: 0% 0%;
+ /* transform-origin: 0% 0%;
   transform: translate(100%, 0);
   
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
@@ -289,8 +290,40 @@ ul li:hover>ul,ul{
 /*
  * And let's slide it in from the left
  */
-#menuToggle input:checked ~ ul
+/*#menuToggle input:checked ~ ul
 {
   transform: none;
 }
+  } */
+ 
+  /* features section css */
+  .features{
+  margin-top: -80px;
+  position: relative;
+  z-index: 8;
+  text-align: center;
+  }
+  .row > .box{
+    width: 261px;
+    height: 149px;
+    background-color: var(--secondary-color);
+    border-radius: 4px;
+    padding: 30px;
+    box-shadow: 0 15px 30px 0 rgb(0 0 0 / 10%);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #212529;
+    z-index: 9999;
+  }
+  .box i{
+    font-size: 60px;
+    color: #40849C;
+  }
+  .box p{
+    font-family: var(--primary-font);
+    text-transform: capitalize;
+    font-size: 20px;
+    padding-top: 20px;
+    
   }
