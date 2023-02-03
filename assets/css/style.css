@@ -68,6 +68,15 @@ header {
   height: 100vh;
   overflow-x: hidden;
 }
+.property::after{
+  content: '\f107';
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  margin:0px 0px 0px 10px;
+  text-decoration:none;
+}
+
 /* dropdown */
 .drop-down{
   visibility: hidden;
@@ -93,11 +102,45 @@ header {
 .drop-down > li > a{
   padding: 5px 20px;
 }
+.drop-down-2{
+  visibility: hidden;
+  list-style: none;
+  text-transform: capitalize;
+  font-family: var(--primary-font);
+  background-color: var(--secondary-color);
+  position: absolute;
+  z-index: 999;
+  text-align: left;
+  box-shadow: 0 2px 10px -2px rgb(0 0 0 / 10%);
+  padding: 20px 0;
+  margin-top: 20px;
+  margin-left: 0;
+  transition: 0.2s 0s;
+  left: 100%;
+  transform: translate(0,-50%);
+}
+.drop-down-2 > li{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  min-width: 180px;
+}
+.drop-down-2 > li > a{
+  padding: 5px 20px;
+}
 ul li:hover>ul,ul{
    visibility: visible;
 }
 .item{
   padding: 3px 0 15px 0;
+}
+#drop-down2::after{
+  content: '\f105';
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  margin:0px 0px 0px 10px;
+  text-decoration:none;
 }
 /* editing slogan */
 .slogan > h1 {
