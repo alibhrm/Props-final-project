@@ -171,7 +171,7 @@ ul {
   bottom: 2px;
 }
 .slogan {
-  height: 500px;
+  height: 100vh;
   align-content: center;
   gap: 30px;
 }
@@ -451,64 +451,207 @@ ul {
   margin-top: 15px;
   margin-bottom: 20px;
 }
-.address > span:nth-child(2){
+.address > span:nth-child(2) {
   display: block;
   font-family: var(--primary-font);
   margin-top: 15px;
   text-transform: uppercase;
-font-weight: bold;
-font-size: 18px;
+  font-weight: bold;
+  font-size: 18px;
 }
-.facilities >span{
+.facilities > span {
   display: inline-block;
   padding: 10px 10px;
   font-family: var(--primary-font);
 }
-.facilities >span:nth-child(1)::before{
-  content: '\f236';
+.facilities > span:nth-child(1)::before {
+  content: "\f236";
   font-family: FontAwesome;
 }
-.facilities >span:nth-child(2)::before{
-  content: '\f2cd';
+.facilities > span:nth-child(2)::before {
+  content: "\f2cd";
   font-family: FontAwesome;
 }
+.buttons > a:hover {
+  position: relative;
+  bottom: 2px;
+  box-shadow: 0 15px 30px -15px rgb(0 0 0 / 30%);
+}
+
 /* Testimonials section edit */
-.testimonial h2{
-   color: var(--primary-color);
-   font-family: var(--primary-font);
-   margin-bottom: 15px;
-   margin-top: 20%;
-   text-transform: uppercase;
-   font-size: 32px;
+.testimonial h2 {
+  color: var(--primary-color);
+  font-family: var(--primary-font);
+  margin-bottom: 15px;
+  margin-top: 20%;
+  text-transform: uppercase;
+  font-size: 32px;
 }
-.comments h3{
+.comments h3 {
   font-size: 24px;
   color: var(--primary-color);
   font-family: var(--primary-font);
   text-transform: capitalize;
   padding: 0 10px;
 }
-.comment1, .comment2 , .comment3{
+.comment1,
+.comment2,
+.comment3 {
   background-color: white;
   width: 60%;
-  height:60%;
+  height: 60%;
 }
-.comment1>img , .comment2>img , .comment3 >img{
+.comment1 > img,
+.comment2 > img,
+.comment3 > img {
   border-radius: 50%;
   width: 20%;
   margin-bottom: 15px;
   margin-top: 20px;
   margin-left: 5px;
-
 }
-.comment1 >p,.comment2 >p,.comment3 >p{
+.comment1 > p,
+.comment2 > p,
+.comment3 > p {
   text-align: justify;
   padding: 0 10px;
   margin: 30px 0;
   font-family: var(--primary-font);
 }
-.job{
+.job {
   font-family: var(--primary-font);
   text-transform: capitalize;
   color: rgb(78, 78, 78);
+}
+/* dream homes section edit */
+.dreamHomesHeader {
+  width: 100%;
+  height: 26%;
+  flex-direction: column;
+}
+.dreamHomesHeader > h2 {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+  font-family: var(--primary-font);
+  color: var(--primary-color);
+  text-transform: uppercase;
+}
+.dreamHomesHeader > p {
+  width: 600px;
+  text-align: center;
+  color: #838383;
+  font-family: var(--primary-font);
+}
+.dreamHomes {
+  border-top: 1px solid #838383;
+}
+.dreamHomesMain img {
+  width: 641px;
+  height: 427px;
+}
+.dreamHomesMain {
+  margin-top: 80px;
+}
+.dreamHomesPicture::after {
+  position: relative;
+  display: block;
+  z-index: -1;
+  bottom: 30%;
+  right: -50%;
+  content: "";
+  width: 412px;
+  height: 220px;
+  background: url(../images/dots.png) no-repeat;
+}
+.dreamBox1 div:nth-child(1) {
+  background-color: #efefef;
+  border-radius: 50%;
+  width: 86px;
+  height: 86px;
+  transition: 0.1s;
+  margin-bottom: 5px;
+}
+.dreamBox2 div:nth-child(1) {
+  background-color: #efefef;
+  border-radius: 50%;
+  width: 86px;
+  height: 86px;
+  transition: 0.1s;
+  margin-bottom: 5px;
+}
+.dreamBox3 div:nth-child(1) {
+  background-color: #efefef;
+  border-radius: 50%;
+  width: 86px;
+  height: 86px;
+  transition: 0.1s;
+}
+
+.dreamBox1 h3 {
+  font-size: 20px;
+  font-family: var(--primary-font);
+  text-transform: uppercase;
+  padding-left: 15px;
+}
+.dreamBox2 h3 {
+  font-size: 20px;
+  font-family: var(--primary-font);
+  text-transform: uppercase;
+  padding-left: 15px;
+}
+.dreamBox3 h3 {
+  font-size: 20px;
+  font-family: var(--primary-font);
+  text-transform: uppercase;
+  padding-left: 15px;
+}
+.dreamBox1 p {
+  font-size: 12px;
+  font-family: var(--primary-font);
+  text-transform: uppercase;
+  margin-top: 5px;
+  padding-left: 15px;
+}
+.dreamBox2 p {
+  font-size: 12px;
+  font-family: var(--primary-font);
+  text-transform: uppercase;
+  margin-top: 5px;
+  padding-left: 15px;
+}
+.dreamBox3 p {
+  font-size: 12px;
+  font-family: var(--primary-font);
+  text-transform: uppercase;
+  margin-top: 5px;
+  padding-left: 15px;
+}
+.dreamBox1:hover .content,
+.dreamBox2:hover .content,
+.dreamBox3:hover .content {
+  outline: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  background: white;
+}
+.numbers{
+  grid-template-columns: repeat(4, 1fr);
+}
+.number1 p, .number2 p, .number3 p, .number4 p{
+  display: block;
+font-family: var(--primary-font);
+font-size: 30px;
+color: var(--primary-color);
+font-weight: bold;
+}
+.number1 span::before, .number2 span::before, .number3 span::before, .number4 span::before{
+content: '#of ';
+font-family: var(--primary-font);
+font-size: 18px;
+}
+.number1 span, .number2 span, .number3 span, .number4 span{
+  font-family: var(--primary-font);
+font-size: 18px;
+text-transform: capitalize;
 }
