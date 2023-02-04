@@ -8,7 +8,7 @@
 :root {
   --primary-color: #1f6f8b;
   --primary-font: "Noto Sans JP", sans-serif;
-  --secondary-color: #ececec;
+  --secondary-color: #faf9f9;
 }
 
 .dFlex {
@@ -462,6 +462,7 @@ font-size: 18px;
 .facilities >span{
   display: inline-block;
   padding: 10px 10px;
+  font-family: var(--primary-font);
 }
 .facilities >span:nth-child(1)::before{
   content: '\f236';
@@ -471,7 +472,43 @@ font-size: 18px;
   content: '\f2cd';
   font-family: FontAwesome;
 }
-.propertyBox a{
-  text-decoration: none;
-  color: #212529;
+/* Testimonials section edit */
+.testimonial h2{
+   color: var(--primary-color);
+   font-family: var(--primary-font);
+   margin-bottom: 15px;
+   margin-top: 20%;
+   text-transform: uppercase;
+   font-size: 32px;
+}
+.comments h3{
+  font-size: 24px;
+  color: var(--primary-color);
+  font-family: var(--primary-font);
+  text-transform: capitalize;
+  padding: 0 10px;
+}
+.comment1, .comment2 , .comment3{
+  background-color: white;
+  width: 60%;
+  height:60%;
+}
+.comment1>img , .comment2>img , .comment3 >img{
+  border-radius: 50%;
+  width: 20%;
+  margin-bottom: 15px;
+  margin-top: 20px;
+  margin-left: 5px;
+
+}
+.comment1 >p,.comment2 >p,.comment3 >p{
+  text-align: justify;
+  padding: 0 10px;
+  margin: 30px 0;
+  font-family: var(--primary-font);
+}
+.job{
+  font-family: var(--primary-font);
+  text-transform: capitalize;
+  color: rgb(78, 78, 78);
 }
