@@ -9,29 +9,39 @@
     <!-- css link -->
     <link rel="stylesheet" href="./assets/css/style.css" />
     <!-- cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- header -->
     <header>
       <!-- main-menu -->
       <div class="container">
-        <nav class="nav-bar d-grid align-center">
+        <nav class="navBar dGrid alignCenter">
           <div class="logo">props</div>
           <div class="menu">
-            <ul class="d-grid">
+            <ul class="dGrid">
               <li><a href="">menu</a></li>
               <li>
                 <a href="" class="property"> properties</a>
-                <ul class="drop-down">
+                <ul class="dropDown">
                   <li class="item buy"><a href="#">buy property</a></li>
                   <li class="item sell"><a href="#">sell property</a></li>
-                  <li class="item " id="drop-down2"><a href="#">drop down</a>
-                    <ul class="drop-down-2">
+                  <li class="item" id="dropDown2">
+                    <a href="#">drop down</a>
+                    <ul class="dropDown-2">
                       <li class="item buy"><a href="#">sub one</a></li>
                       <li class="item sell"><a href="#">sub two</a></li>
-                      <li class="item drop-down2"><a href="#">sub three</a></li>
+                      <li class="item dropDown2"><a href="#">sub three</a></li>
                     </ul>
                   </li>
                 </ul>
@@ -46,7 +56,7 @@
           </div>
         </nav>
         <!-- Slogan -->
-        <div class="slogan d-grid justify-center">
+        <div class="slogan dGrid justifyCenter">
           <h1>FIND A PERFECT DREAM HOUSE</h1>
           <form action="">
             <input
@@ -82,13 +92,74 @@
     <!-- features section (4box) -->
     <section class="features">
       <div class="container">
-        <div class="row d-flex justify-between">
-          <div class="box"><i class="fa fa-house-medical"></i><p>new properties</p></div>
-          <div class="box"><i class="fa fa-building"></i><p>contact agents</p></div>
-          <div class="box"><i class="fa fa-house"></i><p>building for sale</p></div>
-          <div class="box"><i class="fa fa-home-user"></i><p>house for sale</p></div>
+        <div class="row dGrid">
+          <div class="box">
+            <i class="bx bx-home-circle"></i>
+            <p>new properties</p>
+          </div>
+          <div class="box">
+            <i class="bx bx-building"></i>
+            <p>contact agents</p>
+          </div>
+          <div class="box">
+            <i class="bx bx-building-house"></i>
+            <p>building for sale</p>
+          </div>
+          <div class="box">
+            <i class="bx bx-home-smile"></i>
+            <p>house for sale</p>
+          </div>
         </div>
       </div>
     </section>
+    <!-- popular properties section -->
+    <main>
+      <section class="popularProperty">
+        <div class="container">
+          <div class="buttons dFlex justifyBetween">
+            <h2>popular properties</h2>
+            <a href="#">view all properties</a>
+          </div>
+          <div class="propertyBox dFlex">
+            <div class="imgBox1">
+              <div class="textBox">
+                <div class="price"><span>$3,298,000</span></div>
+                <div class="address">
+                  <span>5232 North Carolina Ave. 21BC</span>
+                  <span>carolina, usa</span>
+                </div>
+                <div class="facilities">
+                  <span>2 beds</span><span>2 baths</span>
+                </div>
+              </div>
+            </div>
+            <div class="imgBox2">
+              <div class="textBox">
+                <div class="price"><span>$3,298,000</span></div>
+                <div class="address">
+                  <span>5232 North Carolina Ave. 21BC</span>
+                  <span>carolina, usa</span>
+                </div>
+                <div class="facilities">
+                  <span>2 beds</span><span>2 baths</span>
+                </div>
+              </div>
+            </div>
+            <div class="imgBox3">
+              <div class="textBox">
+                <div class="price"><span>$3,298,000</span></div>
+                <div class="address">
+                  <span>5232 North Carolina Ave. 21BC</span>
+                  <span>carolina, usa</span>
+                </div>
+                <div class="facilities">
+                  <span>2 beds</span><span>2 baths</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
