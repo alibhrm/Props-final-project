@@ -733,7 +733,7 @@ footer {
   border-bottom: 2px solid #1f6f8b;
   transition: all 0.3s ease;
 }
-.elements{
+.elements {
   justify-content: space-around;
 }
 .linkElement h3 {
@@ -756,43 +756,230 @@ footer {
   border-bottom: 2px solid #1f6f8b;
   transition: all 0.3s ease;
 }
-.linkElement a{
+.linkElement a {
   color: #7f7f7f;
   text-decoration: none;
 }
 .elements1 {
   flex-direction: column;
 }
-.socialLink{
+.socialLink {
   width: 40px;
-    height: 40px;
-    border-radius: 40%;
-    background-color: #7f7f7f;
-   
+  height: 40px;
+  border-radius: 40%;
+  background-color: #7f7f7f;
 }
-.socialLink i{
+.socialLink i {
   position: relative;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   color: var(--secondary-color);
 }
-.socialLink:hover{
+.socialLink:hover {
   background-color: #1f6f8b;
   position: relative;
   bottom: 2px;
 }
 /* copyright */
-.copyright{
+.copyright {
   width: 100%;
-    height: 20%;
-    display: flex;
-    justify-content: center;
-    color: #7f7f7f;
-    font-size: 14.8px;
-    padding-top: 40px;
-    font-family: var(--primary-font);
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  color: #7f7f7f;
+  font-size: 14.8px;
+  padding-top: 40px;
+  font-family: var(--primary-font);
 }
-.copyright i{
+.copyright i {
   color: #dc3545;
+}
+/* menu responsive  */
+@media (max-width: 425px), (max-width: 500px), (max-width: 768px) {
+  :root {
+    --primary-color: #1f6f8b;
+    --primary-font: "Noto Sans JP", sans-serif;
+    --secondary-color: #faf9f9;
+  }
+
+  .menu > ul {
+    visibility: hidden;
+  }
+  .hamburgerMenu,
+  .hamburgerMenu > label ul {
+    visibility: visible;
+  }
+  label .toggleMenu {
+    position: absolute;
+    right: -100px;
+    top: -100px;
+    z-index: 100;
+    width: 200px;
+    height: 190px;
+    background: var(--secondary-color);
+    /* border-radius: 50% 50% 50% 50%; */
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    box-shadow: 0 0 0 0 var(--secondary-color), 0 0 0 0 var(--secondary-color);
+    cursor: pointer;
+  }
+
+  label .hamburger {
+    position: absolute;
+    top: 135px;
+    left: 50px;
+    width: 30px;
+    height: 2px;
+    background: black;
+    display: block;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+  }
+
+  label .hamburger:after,
+  label .hamburger:before {
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: black;
+  }
+
+  label .hamburger:before {
+    top: -10px;
+  }
+
+  label .hamburger:after {
+    bottom: -10px;
+  }
+
+  label input {
+    display: none;
+  }
+
+  label input:checked + .toggleMenu {
+    box-shadow: 0 0 0 100vw var(--secondary-color),
+      0 0 0 100vh var(--secondary-color);
+    border-radius: 0;
+  }
+
+  label input:checked + .toggleMenu .hamburger {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  label input:checked + .toggleMenu .hamburger:after {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    bottom: 0;
+  }
+
+  label input:checked + .toggleMenu .hamburger:before {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    top: 0;
+  }
+
+  label input:checked + .toggleMenu + ul {
+    opacity: 1;
+  }
+
+  label ul {
+    z-index: 200;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    -webkit-transition: 0.25s 0s ease-in-out;
+    transition: 0.25s 0s ease-in-out;
+    list-style: none;
+  }
+
+  label a {
+    margin-bottom: 1em;
+    display: block;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-family: var(--primary-font);
+  }
+
+  h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 80%;
+    text-align: center;
+  }
+
+  .row {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .slogan > h1 {
+    padding-bottom: 60px;
+  }
+  .slogan input:nth-child(2) {
+    padding: 20px 35px;
+  }
+  .dreamHomesMain{
+    flex-direction: column;
+  }
+  .dreamHomesPicture::after {
+    content: '';
+   visibility: hidden;
+  }
+  .propertyBox{
+    flex-direction: column;
+    align-items: center;
+  }
+  .testimonial h2{
+    padding-top: 100px;
+    text-align: center;
+  }
+  .comments{
+    flex-direction: column;
+    align-items: center;
+  }
+  .dreamHomesHeader > p{
+    width: 200px;
+  }
+  .dreamHomesMain img{
+    width: 100%;
+    height: auto;
+  }
+  .dreamBox1, .dreamBox2 , .dreamBox3{
+    flex-direction: column;
+  }
+  .dreamHomeFeatures{
+    display: flex;
+    flex-direction: row;
+    margin-top: -200px;
+    margin-bottom: 200px;
+  }
+.Agents{
+  flex-direction: column;
+  align-items: center;
+}
+.agent1, .agent2, .agent3{
+  width: 50%;
+  margin-bottom: 100px;
+}
+.footerSlogan a{
+  width: auto;
+  line-height: 0;
+}
+.footerElements{
+  flex-direction: column;
+}
 }
