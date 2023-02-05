@@ -982,4 +982,7 @@ footer {
 .footerElements{
   flex-direction: column;
 }
+.agentText p {
+  width: 50%;
+}
 }
