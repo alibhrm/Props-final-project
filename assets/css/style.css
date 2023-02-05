@@ -188,7 +188,8 @@ ul {
   text-align: center;
   text-transform: capitalize;
 }
-.hamburgerMenu , .hamburgerMenu> label ul{
+.hamburgerMenu,
+.hamburgerMenu > label ul {
   visibility: hidden;
 }
 
@@ -575,8 +576,7 @@ ul {
   height: 100%;
   border-radius: 50%;
 }
-.agentDescription h5 > a
-{
+.agentDescription h5 > a {
   color: black;
   text-decoration: none;
   font-size: 18px;
@@ -584,31 +584,38 @@ ul {
   font-family: var(--primary-font);
   text-transform: capitalize;
 }
-.agentDescription
- {
+.agentDescription {
   text-align: center;
 }
-.agentSocial1, .agentSocial2, .agentSocial3, .agentSocial4{
+.agentSocial1,
+.agentSocial2,
+.agentSocial3,
+.agentSocial4 {
   width: 40px;
-    height: 40px;
-    background-color: #1f6f8b;
-    border-radius: 50%;
-    margin-left: 10px;
-    position: relative;
-    color: white;
-   
+  height: 40px;
+  background-color: #1f6f8b;
+  border-radius: 50%;
+  margin-left: 10px;
+  position: relative;
+  color: white;
 }
-.agentSocial1 i, .agentSocial2 i, .agentSocial3 i, .agentSocial4 i{
+.agentSocial1 i,
+.agentSocial2 i,
+.agentSocial3 i,
+.agentSocial4 i {
   position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.agentSocial{
+.agentSocial {
   margin: 15px 0;
 }
 
-.agentSocial1:hover, .agentSocial2:hover, .agentSocial3:hover, .agentSocial4:hover {
+.agentSocial1:hover,
+.agentSocial2:hover,
+.agentSocial3:hover,
+.agentSocial4:hover {
   background-color: white;
   border: 2px solid #1f6f8b;
   color: #1f6f8b;
@@ -619,16 +626,173 @@ ul {
   transition-timing-function: ease-in-out;
   cursor: pointer;
 }
-.agentDescription > span{
+.agentDescription > span {
   font-size: 14px;
-    color: #7f7f7f;
-    margin-bottom: 16px;
-    display: inline-block;
-    font-family: var(--primary-font);
-    text-transform: capitalize;
+  color: #7f7f7f;
+  margin-bottom: 16px;
+  display: inline-block;
+  font-family: var(--primary-font);
+  text-transform: capitalize;
 }
-.agentDescription > p{
+.agentDescription > p {
   text-transform: capitalize;
   font-family: var(--primary-font);
   padding: 0 20px;
+}
+
+/* footer section */
+.footerSlogan h3 {
+  font-size: 3em;
+  font-family: var(--primary-font);
+  color: var(--primary-color);
+  text-align: center;
+  text-transform: capitalize;
+  padding-top: 50px;
+}
+footer {
+  background-color: #efefef;
+}
+.footerSlogan a {
+  background-image: linear-gradient(
+    250deg,
+    rgb(248, 42, 126) 0%,
+    rgb(117, 42, 144) 100%
+  );
+  padding: 16px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: var(--secondary-color);
+  width: 246px;
+  height: 56px;
+  line-height: 24px;
+  font-family: var(--primary-font);
+  text-transform: capitalize;
+  position: relative;
+  display: inline-block;
+}
+.footerSlogan a:hover {
+  box-shadow: 0 15px 30px 0 rgb(0 0 0 / 20%);
+  top: -2px;
+}
+.footerSlogan {
+  flex-direction: column;
+  gap: 40px;
+}
+.footerElements {
+  grid-template-columns: repeat(3, 5fr);
+  margin-top: 80px;
+}
+.contactElement h3 {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  color: var(--primary-color);
+  font-family: var(--primary-font);
+}
+.contactElement address {
+  margin-bottom: 16px;
+  font-size: 14px;
+  font-style: normal;
+  font-family: var(--primary-font);
+  color: #7f7f7f;
+}
+.contactElement ul,
+.contactElement a {
+  list-style: none;
+  font-family: var(--primary-font);
+  color: #7f7f7f;
+  text-decoration: none;
+  border-bottom: 2px solid rgba(31, 111, 139, 0.1);
+  display: inline-block;
+  margin: 10px 0;
+}
+.contactElement a:hover {
+  border-bottom: 2px solid #1f6f8b;
+  transition: all 0.3s ease;
+}
+.sourcesElement h3 {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  color: var(--primary-color);
+  font-family: var(--primary-font);
+}
+.sourcesElement ul {
+  list-style: none;
+  font-family: var(--primary-font);
+  color: #7f7f7f;
+  text-decoration: none;
+}
+.sourcesElement li {
+  border-bottom: 2px solid rgba(31, 111, 139, 0.1);
+  margin: 10px 0;
+}
+.sourcesElement li:hover {
+  border-bottom: 2px solid #1f6f8b;
+  transition: all 0.3s ease;
+}
+.elements{
+  justify-content: space-around;
+}
+.linkElement h3 {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  color: var(--primary-color);
+  font-family: var(--primary-font);
+}
+.linkElement ul {
+  list-style: none;
+  font-family: var(--primary-font);
+}
+.linkElement li {
+  border-bottom: 2px solid rgba(31, 111, 139, 0.1);
+  margin: 10px 0;
+}
+.linkElement li:hover {
+  border-bottom: 2px solid #1f6f8b;
+  transition: all 0.3s ease;
+}
+.linkElement a{
+  color: #7f7f7f;
+  text-decoration: none;
+}
+.elements1 {
+  flex-direction: column;
+}
+.socialLink{
+  width: 40px;
+    height: 40px;
+    border-radius: 40%;
+    background-color: #7f7f7f;
+   
+}
+.socialLink i{
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--secondary-color);
+}
+.socialLink:hover{
+  background-color: #1f6f8b;
+  position: relative;
+  bottom: 2px;
+}
+/* copyright */
+.copyright{
+  width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    color: #7f7f7f;
+    font-size: 14.8px;
+    padding-top: 40px;
+    font-family: var(--primary-font);
+}
+.copyright i{
+  color: #dc3545;
 }
