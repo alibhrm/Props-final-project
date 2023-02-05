@@ -188,158 +188,9 @@ ul {
   text-align: center;
   text-transform: capitalize;
 }
-#menuToggle,
-#menu {
+.hamburgerMenu , .hamburgerMenu> label ul{
   visibility: hidden;
 }
-/* menu responsive */
-/* @media (max-width:425px) {
-  .menu>ul{
-    visibility: hidden;
-  }
-    #menuToggle
-{
-  visibility: visible;
-  display: block;
-  position: absolute;
-  top: 35px;
-  left: 321px;
- 
-  z-index: 1;
-  
-  -webkit-user-select: none;
-  user-select: none;
-}
-
-#menuToggle a
-{
-  text-decoration: none;
-  color: #232323;
-  
-  transition: color 0.3s ease;
-}
-
-#menuToggle a:hover
-{
-  color: tomato;
-}
-
-
-#menuToggle input
-{
-  display: block;
-  width: 40px;
-  height: 32px;
-  position: absolute;
-  top: -7px;
-  left: -5px;
-  
-  cursor: pointer;
-  
-  opacity: 0; /* hide this */
-/*z-index: 2; /* and place it over the hamburger */
-
-/*-webkit-touch-callout: none;
-}*/
-
-/*
- * Just a quick hamburger
- */
-/*#menuToggle span
-{
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
-  
-  background: #cdcdcd;
-  border-radius: 3px;
-  
-  z-index: 1;
-  
-  transform-origin: 4px 0px;
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
-}
-
-#menuToggle span:first-child
-{
-  transform-origin: 0% 0%;
-}
-
-#menuToggle span:nth-last-child(2)
-{
-  transform-origin: 0% 100%;
-}
-
-/* 
- * Transform all the slices of hamburger
- * into a crossmark.
- */
-/*#menuToggle input:checked ~ span
-{
-  opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
-}
-
-/*
- * But let's hide the middle one.
- */
-/*#menuToggle input:checked ~ span:nth-last-child(3)
-{
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-/*
- * Ohyeah and the last one should go the other direction
- */
-/*#menuToggle input:checked ~ span:nth-last-child(2)
-{
-  transform: rotate(-45deg) translate(0, -1px);
-}
-
-/*
- * Make this absolute positioned
- * at the top left of the screen
- */
-/*#menu
-{
-  position: absolute;
-  width: 300px;
-  margin: -100px 0 0 -50px;
-  padding: 50px;
-  padding-top: 125px;
-  
-  background: #ededed;
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
-
-/* transform-origin: 0% 0%;
-  transform: translate(100%, 0);
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-}
-
-#menu li
-{
-  padding: 10px 0;
-  font-size: 22px;
-}
-
-/*
- * And let's slide it in from the left
- */
-/*#menuToggle input:checked ~ ul
-{
-  transform: none;
-}
-  } */
 
 /* features section css */
 .features {
@@ -348,9 +199,12 @@ ul {
   z-index: 8;
   text-align: center;
 }
+.row {
+  gap: 30px;
+}
 .row > .box {
-  width: 261px;
-  height: 149px;
+  width: 100%;
+  height: 100%;
   background-color: var(--secondary-color);
   border-radius: 4px;
   padding: 30px;
@@ -635,23 +489,146 @@ ul {
   color: var(--primary-color);
   background: white;
 }
-.numbers{
+.numbers {
   grid-template-columns: repeat(4, 1fr);
+  padding-bottom: 200px;
 }
-.number1 p, .number2 p, .number3 p, .number4 p{
+.number1 p,
+.number2 p,
+.number3 p,
+.number4 p {
   display: block;
-font-family: var(--primary-font);
-font-size: 30px;
-color: var(--primary-color);
-font-weight: bold;
-}
-.number1 span::before, .number2 span::before, .number3 span::before, .number4 span::before{
-content: '#of ';
-font-family: var(--primary-font);
-font-size: 18px;
-}
-.number1 span, .number2 span, .number3 span, .number4 span{
   font-family: var(--primary-font);
-font-size: 18px;
-text-transform: capitalize;
+  font-size: 30px;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+.number1 span::before,
+.number2 span::before,
+.number3 span::before,
+.number4 span::before {
+  content: "#of ";
+  font-family: var(--primary-font);
+  font-size: 18px;
+}
+.number1 span,
+.number2 span,
+.number3 span,
+.number4 span {
+  font-family: var(--primary-font);
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+/* ourAgent section */
+.ourAgent {
+  background-color: var(--secondary-color);
+}
+.agentText {
+  flex-direction: column;
+  width: 500px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.agentText h3 {
+  font-family: var(--primary-font);
+  font-size: 32px;
+  color: var(--primary-color);
+  text-transform: capitalize;
+  margin-top: 50px;
+}
+.agentText p {
+  font-family: var(--primary-font);
+  margin-top: 50px;
+  text-align: center;
+}
+.Agents {
+  width: 100%;
+  height: 75%;
+  padding-top: 45px;
+  padding-bottom: 200px;
+  justify-content: space-evenly;
+}
+.agent1,
+.agent2,
+.agent3 {
+  width: 30%;
+  height: 325px;
+  background-color: white;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.agentProfile1,
+.agentProfile2,
+.agentProfile3 {
+  width: 90px;
+  height: 90px;
+  position: relative;
+  transform: translate(0, -50%);
+}
+.agentProfile1 img,
+.agentProfile3 img,
+.agentProfile2 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.agentDescription h5 > a
+{
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 21.6px;
+  font-family: var(--primary-font);
+  text-transform: capitalize;
+}
+.agentDescription
+ {
+  text-align: center;
+}
+.agentSocial1, .agentSocial2, .agentSocial3, .agentSocial4{
+  width: 40px;
+    height: 40px;
+    background-color: #1f6f8b;
+    border-radius: 50%;
+    margin-left: 10px;
+    position: relative;
+    color: white;
+   
+}
+.agentSocial1 i, .agentSocial2 i, .agentSocial3 i, .agentSocial4 i{
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.agentSocial{
+  margin: 15px 0;
+}
+
+.agentSocial1:hover, .agentSocial2:hover, .agentSocial3:hover, .agentSocial4:hover {
+  background-color: white;
+  border: 2px solid #1f6f8b;
+  color: #1f6f8b;
+  position: relative;
+  bottom: 2px;
+  transition-duration: 0.5s;
+  transition-property: background-color, color;
+  transition-timing-function: ease-in-out;
+  cursor: pointer;
+}
+.agentDescription > span{
+  font-size: 14px;
+    color: #7f7f7f;
+    margin-bottom: 16px;
+    display: inline-block;
+    font-family: var(--primary-font);
+    text-transform: capitalize;
+}
+.agentDescription > p{
+  text-transform: capitalize;
+  font-family: var(--primary-font);
+  padding: 0 20px;
 }
