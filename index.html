@@ -1,416 +1,491 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Props</title>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Props</title>
 
-  <!-- css link -->
-  <link rel="stylesheet" href="./assets/css/style.css" />
-  <!-- cdn -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-</head>
+        <!-- css link -->
+        <link
+        rel="stylesheet" href="./assets/css/style.css"/>
+        <!-- cdn -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    </head>
 
-<body>
-  <!-- header -->
-  <header>
-    <!-- main-menu -->
-    <div class="container">
-      <nav class="navBar dGrid alignCenter">
-        <!-- logo -->
-        <div class="logo">props</div>
-        <!-- menu -->
-        <div class="menu">
-          <ul class="dGrid">
-            <li><a href="">home</a></li>
-            <li>
-              <a href="" class="property"> properties</a>
-              <!-- dropdwonmenu -->
-              <ul class="dropDown">
-                <li class="item buy"><a href="#">buy property</a></li>
-                <li class="item sell"><a href="#">sell property</a></li>
-                <li class="item" id="dropDown2">
-                  <a href="#">drop down</a>
-                  <ul class="dropDown-2">
-                    <li class="item buy"><a href="#">sub one</a></li>
-                    <li class="item sell"><a href="#">sub two</a></li>
-                    <li class="item dropDown2"><a href="#">sub three</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
+    <body>
+        <!-- header -->
+        <header>
+            <!-- main-menu -->
+            <div class="container">
+                <nav
+                    class="navBar dGrid alignCenter">
+                    <!-- logo -->
+                    <div class="logo">props</div>
+                    <!-- menu -->
+                    <div class="menu">
+                        <ul class="dGrid">
+                            <li>
+                                <a href="">home</a>
+                            </li>
+                            <li>
+                                <a href="" class="property">
+                                    properties</a>
+                                <!-- dropdwonmenu -->
+                                <ul class="dropDown">
+                                    <li class="item buy">
+                                        <a href="#">buy property</a>
+                                    </li>
+                                    <li class="item sell">
+                                        <a href="#">sell property</a>
+                                    </li>
+                                    <li class="item" id="dropDown2">
+                                        <a href="#">drop down</a>
+                                        <ul class="dropDown-2">
+                                            <li class="item buy">
+                                                <a href="#">sub one</a>
+                                            </li>
+                                            <li class="item sell">
+                                                <a href="#">sub two</a>
+                                            </li>
+                                            <li class="item dropDown2">
+                                                <a href="#">sub three</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
 
-            <li><a href="">services</a></li>
+                            <li>
+                                <a href="">services</a>
+                            </li>
 
-            <li><a href="">about</a></li>
+                            <li>
+                                <a href="">about</a>
+                            </li>
 
-            <li><a href="ContactUs.html">contact us</a></li>
-          </ul>
-        </div>
-      </nav>
-      <!-- Slogan -->
-      <div class="slogan dGrid justifyCenter alignCenter">
-        <h1>FIND A PERFECT DREAM HOUSE</h1>
-        <form action="">
-          <input type="text" name="" id="" placeholder="Your ZIP code or City. e.g. New York" />
-          <input type="button" value="Search" />
-        </form>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-          enim pariatur similique debitis vel nisi qui reprehenderit totam?
-          Quod maiores.
-        </p>
-        <a href="#">view properties <i class="fa fa-arrow-right"></i></a>
-      </div>
-      <!-- Togglemenu -->
-      <div class="hamburgerMenu">
-        <label>
-          <input type="checkbox">
-          <span class="toggleMenu"> <span class="hamburger"></span> </span>
-          <ul>
-            <li> <a href="index.html">Home</a> </li>
-            <li> <a href="#">About</a> </li>
-            <li> <a href="ContactUs.html">Contact</a> </li>
-            <li> <a href="#">Services</a> </li>
-          </ul>
-        </label>
-      </div>
-  </header>
-  <!-- features section (4box) -->
-  <section class="features">
-    <div class="container">
-      <div class="row dGrid">
-        <div class="box">
-          <i class="bx bx-home-circle"></i>
-          <p>new properties</p>
-        </div>
-        <div class="box">
-          <i class="bx bx-building"></i>
-          <p>contact agents</p>
-        </div>
-        <div class="box">
-          <i class="bx bx-building-house"></i>
-          <p>building for sale</p>
-        </div>
-        <div class="box">
-          <i class="bx bx-home-smile"></i>
-          <p>house for sale</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- popular properties section -->
-  <main>
-    <section class="popularProperty">
-      <div class="container">
-        <div class="buttons dFlex justifyBetween">
-          <h2>popular properties</h2>
-          <a href="#">view all properties</a>
-        </div>
-        <div class="propertyBox dFlex">
-          <div class="imgBox1">
-            <div class="textBox">
-              <div class="price"><span>$3,298,000</span></div>
-              <div class="address">
-                <span>5232 North Carolina Ave. 21BC</span>
-                <span>carolina, usa</span>
-              </div>
-              <div class="facilities">
-                <span>2 beds</span><span>2 baths</span>
-              </div>
-            </div>
-          </div>
-          <div class="imgBox2">
-            <div class="textBox">
-              <div class="price"><span>$3,298,000</span></div>
-              <div class="address">
-                <span>5232 North Carolina Ave. 21BC</span>
-                <span>carolina, usa</span>
-              </div>
-              <div class="facilities">
-                <span>2 beds</span><span>2 baths</span>
-              </div>
-            </div>
-          </div>
-          <div class="imgBox3">
-            <div class="textBox">
-              <div class="price"><span>$3,298,000</span></div>
-              <div class="address">
-                <span>5232 North Carolina Ave. 21BC</span>
-                <span>carolina, usa</span>
-              </div>
-              <div class="facilities">
-                <span>2 beds</span><span>2 baths</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Testimonial Section -->
-    <section class="testimonial">
-      <div class="container">
-        <h2>testimonials</h2>
-        <div class="comments dFlex justifyBetween">
-          <div class="comment1">
-            <img src="./assets/images/person_1.jpg" alt="" />
-            <h3>david smith</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repellat aspernatur pariatur quia nostrum sunt! Incidunt quo
-              eligendi autem odit provident dolores sint cumque, molestiae
-              iusto pariatur aperiam necessitatibus libero corrupti?
-            </p>
-            <p class="job">designer,co-founder</p>
-          </div>
-          <div class="comment2">
-            <img src="./assets/images/person_2.jpg" alt="" />
-            <h3>james smith</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repellat aspernatur pariatur quia nostrum sunt! Incidunt quo
-              eligendi autem odit provident dolores sint cumque, molestiae
-              iusto pariatur aperiam necessitatibus libero corrupti?
-            </p>
-            <p class="job">designer,co-founder</p>
-          </div>
-          <div class="comment3">
-            <img src="./assets/images/person_4.jpg" alt="" />
-            <h3>synthia cameron</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repellat aspernatur pariatur quia nostrum sunt! Incidunt quo
-              eligendi autem odit provident dolores sint cumque, molestiae
-              iusto pariatur aperiam necessitatibus libero corrupti?
-            </p>
-            <p class="job">designer,co-founder</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- dream homes section -->
-    <section class="dreamHomes">
-      <div class="container">
-        <div class="dreamHomesHeader dFlex justifyCenter alignCenter">
-          <h2>we bring dream homes to reality</h2>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit
-            impedit nisi magni earum itaque blanditiis accusantium fugit ullam
-            officia placeat!
-          </p>
-        </div>
-        <div class="dreamHomesMain dFlex justifyBetween">
-          <div class="dreamHomesPicture">
-            <img src="./assets/images/hero_2.jpg" alt="" />
-          </div>
-          <div class="dreamHomeFeatures">
-            <div class="dreamBox1 dFlex alignCenter">
-              <div class="dFlex justifyCenter alignCenter content">
-                <i class="fa fa-home"></i>
-              </div>
-              <div>
-                <h3>quality properties</h3>
-                <p>Lorem ipsum dolor sit amet.</p>
-              </div>
-            </div>
-            <div class="dreamBox2 dFlex alignCenter">
-              <div class="dFlex justifyCenter alignCenter content">
-                <i class="fa fa-user"></i>
-              </div>
-              <div>
-                <h3>top rated agents</h3>
-                <p>Lorem ipsum dolor sit amet.</p>
-              </div>
-            </div>
-            <div class="dreamBox3 dFlex alignCenter">
-              <div class="dFlex justifyCenter alignCenter content">
-                <i class="fa fa-shield-halved"></i>
-              </div>
-              <div>
-                <h3>easy and safe</h3>
-                <p>Lorem ipsum dolor sit amet.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="numbers dGrid">
-          <div class="number1">
-            <p>2,197</p>
-            <span>buy properties</span>
-          </div>
-          <div class="number2">
-            <p>3,918</p>
-            <span> sell properties</span>
-          </div>
-          <div class="number3">
-            <p>3,928</p>
-            <span>all properties </span>
-          </div>
-          <div class="number4">
-            <p>1,291</p>
-            <span>agents</span>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- our agents section -->
-    <section class="ourAgent">
-      <div class="container">
-        <div class="agentText dFlex justifyCenter alignCenter">
-          <h3>our agents</h3>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae
-            soluta quae unde temporibus dolorum voluptatibus laborum quo odit
-            molestiae rerum?
-          </p>
-        </div>
-        <div class="Agents dFlex">
-          <div class="agent1">
-            <div class="agentProfile1">
-              <img src="./assets/images/person_1.jpg" alt="" />
-            </div>
-            <div class="agentDescription">
-              <h5><a href="#">james doe</a></h5>
-              <span>real state agent</span>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Aliquam fugit sequi modi perspiciatis voluptatum accusamus.
-              </p>
-            </div>
-            <div class="agentSocial dFlex">
-              <div class="agentSocial1"><i class="bx bxl-twitter"></i></div>
-              <div class="agentSocial2"><i class="bx bxl-instagram"></i></div>
-              <div class="agentSocial3"><i class="bx bxl-facebook"></i></div>
-              <div class="agentSocial4"><i class="bx bxl-linkedin"></i></div>
-            </div>
-          </div>
-          <div class="agent2">
-            <div class="agentProfile2">
-              <img src="./assets/images/person_2.jpg" alt="" />
-            </div>
-            <div class="agentDescription">
-              <h5><a href="#">jean smith</a></h5>
-              <span>real state agent</span>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Aliquam fugit sequi modi perspiciatis voluptatum accusamus.
-              </p>
-            </div>
-            <div class="agentSocial dFlex">
-              <div class="agentSocial1"><i class="bx bxl-twitter"></i></div>
-              <div class="agentSocial2"><i class="bx bxl-instagram"></i></div>
-              <div class="agentSocial3"><i class="bx bxl-facebook"></i></div>
-              <div class="agentSocial4"><i class="bx bxl-linkedin"></i></div>
-            </div>
-          </div>
-          <div class="agent3 dFlex">
-            <div class="agentProfile3">
-              <img src="./assets/images/person_4.jpg" alt="" />
-            </div>
-            <div class="agentDescription">
-              <h5><a href="#">davin smith</a></h5>
-              <span>real state agent</span>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Aliquam fugit sequi modi perspiciatis voluptatum accusamus.
-              </p>
-            </div>
-            <div class="agentSocial dFlex">
-              <div class="agentSocial1"><i class="bx bxl-twitter"></i></div>
-              <div class="agentSocial2"><i class="bx bxl-instagram"></i></div>
-              <div class="agentSocial3"><i class="bx bxl-facebook"></i></div>
-              <div class="agentSocial4"><i class="bx bxl-linkedin"></i></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <!-- footer -->
-  <footer>
-    <div class="container">
-      <div class="footerSlogan dFlex alignCenter justifyBetween">
-        <h3>be a part of our growing real state agent</h3><a href="#">apply for real state agent</a>
-      </div>
-      <div class="footerElements dFlex">
-        <!-- footer contact -->
-        <div class="contactElement">
-          <h3>Contact</h3>
-          <address>43 Raymouth Rd. Baltemoer, London 3910</address>
-          <ul>
-            <li>
-              <a href="#">+1(123)-456-7890</a>
-            </li>
-            <li>
-              <a href="">+1(123)-456-7890</a>
-            </li>
-            <li>
-              <a href="">info@mydomain.com</a>
-            </li>
-          </ul>
-        </div>
-        <!-- footer sources -->
-        <div class="sources">
-          <div class="sourcesElement">
-            <h3>Sources</h3>
-            <div class="elements dFlex ">
-              <div class="element1">
-                <ul>
-                  <li>About us</li>
-                  <li>Services</li>
-                  <li>Vision</li>
-                  <li>Mission</li>
-                  <li>Terms</li>
-                  <li>Privacy</li>
-                </ul>
-              </div>
-              <div class="element2">
-                <ul>
-                  <li>Partners</li>
-                  <li>Careers</li>
-                  <li>Blog</li>
-                  <li>Business</li>
-                  <li>FAQ</li>
-                  <li>Creative</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- footer links -->
-        <div class="links">
-          <div class="linkElement">
-            <h3>Links</h3>
-            <div class="elements1 dFlex">
-              <div class="element3">
-                <ul>
-                  <li><a href="">Our Vision</a></li>
-                  <li><a href="">About us</a></li>
-                  <li><a href="">Contact us</a></li>
-                </ul>
-              </div>
-              <div class="element4 dFlex ">
-                <div class="socialLink linkSocial1"><i class="bx bxl-twitter"></i></div>
-              <div class="socialLink linkSocial2"><i class="bx bxl-instagram"></i></div>
-              <div class="socialLink linkSocial3"><i class="bx bxl-facebook"></i></div>
-              <div class="socialLink linkSocial4"><i class="bx bxl-linkedin"></i></div>
-              <div class="socialLink linkSocial5"><i class="bx bxl-pinterest"></i></div>
-              <div class="socialLink linkSocial6"><i class="bx bxl-dribbble"></i></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- copyright -->
-      <div class="copyright"><p>Copyright ©2023 All rights reserved | This template is made
-        with<i class="bx bxs-heart"></i>by Colorlib</p></div>
-    </div>
-  </footer>
-</body>
+                            <li>
+                                <a href="ContactUs.html">contact us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <!-- Slogan -->
+                <div class="slogan dGrid justifyCenter alignCenter">
+                    <h1>FIND A PERFECT DREAM HOUSE</h1>
+                    <form action="">
+                        <input type="text" name="" id="" placeholder="Your ZIP code or City. e.g. New York"/>
+                        <input type="button" value="Search"/>
+                    </form>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+                                  enim pariatur similique debitis vel nisi qui reprehenderit totam?
+                                  Quod maiores.
+                    </p>
+                    <a href="#">view properties
+                        <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+                <!-- Togglemenu -->
+                <div class="hamburgerMenu">
+                    <label>
+                        <input type="checkbox">
+                        <span class="toggleMenu">
+                            <span class="hamburger"></span>
+                        </span>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="ContactUs.html">Contact</a></li>
+                            <li><a href="#">Services</a></li>
+                        </ul>
+                    </label>
+                </div>
+            </header>
 
+            <!-- features section (4box) -->
+            <section class="features">
+                <div class="container">
+                    <div class="row dGrid">
+                        <div class="box">
+                            <i class="bx bx-home-circle"></i>
+                            <p>new properties</p>
+                        </div>
+                        <div class="box">
+                            <i class="bx bx-building"></i>
+                            <p>contact agents</p>
+                        </div>
+                        <div class="box">
+                            <i class="bx bx-building-house"></i>
+                            <p>building for sale</p>
+                        </div>
+                        <div class="box">
+                            <i class="bx bx-home-smile"></i>
+                            <p>house for sale</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- popular properties section -->
+            <main>
+                <section class="popularProperty">
+                    <div class="container">
+                        <div class="buttons dFlex justifyBetween">
+                            <h2>popular properties</h2>
+                            <a href="#">view all properties</a>
+                        </div>
+                        <div class="propertyBox dFlex">
+                            <div class="imgBox1">
+                                <div class="textBox">
+                                    <div class="price">
+                                        <span>$3,298,000</span>
+                                    </div>
+                                    <div class="address">
+                                        <span>5232 North Carolina Ave. 21BC</span>
+                                        <span>carolina, usa</span>
+                                    </div>
+                                    <div class="facilities">
+                                        <span>2 beds</span>
+                                        <span>2 baths</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="imgBox2">
+                                <div class="textBox">
+                                    <div class="price">
+                                        <span>$3,298,000</span>
+                                    </div>
+                                    <div class="address">
+                                        <span>5232 North Carolina Ave. 21BC</span>
+                                        <span>carolina, usa</span>
+                                    </div>
+                                    <div class="facilities">
+                                        <span>2 beds</span>
+                                        <span>2 baths</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="imgBox3">
+                                <div class="textBox">
+                                    <div class="price">
+                                        <span>$3,298,000</span>
+                                    </div>
+                                    <div class="address">
+                                        <span>5232 North Carolina Ave. 21BC</span>
+                                        <span>carolina, usa</span>
+                                    </div>
+                                    <div class="facilities">
+                                        <span>2 beds</span>
+                                        <span>2 baths</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Testimonial Section -->
+                <section class="testimonial">
+                    <div class="container">
+                        <h2>testimonials</h2>
+                        <div class="comments dFlex justifyBetween">
+                            <div class="comment1">
+                                <img src="./assets/images/person_1.jpg" alt=""/>
+                                <h3>david smith</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                  Repellat aspernatur pariatur quia nostrum sunt! Incidunt quo
+                                                  eligendi autem odit provident dolores sint cumque, molestiae
+                                                  iusto pariatur aperiam necessitatibus libero corrupti?
+                                </p>
+                                <p class="job">designer,co-founder</p>
+                            </div>
+                            <div class="comment2">
+                                <img src="./assets/images/person_2.jpg" alt=""/>
+                                <h3>james smith</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                  Repellat aspernatur pariatur quia nostrum sunt! Incidunt quo
+                                                  eligendi autem odit provident dolores sint cumque, molestiae
+                                                  iusto pariatur aperiam necessitatibus libero corrupti?
+                                </p>
+                                <p class="job">designer,co-founder</p>
+                            </div>
+                            <div class="comment3">
+                                <img src="./assets/images/person_4.jpg" alt=""/>
+                                <h3>synthia cameron</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                  Repellat aspernatur pariatur quia nostrum sunt! Incidunt quo
+                                                  eligendi autem odit provident dolores sint cumque, molestiae
+                                                  iusto pariatur aperiam necessitatibus libero corrupti?
+                                </p>
+                                <p class="job">designer,co-founder</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- dream homes section -->
+                <section class="dreamHomes">
+                    <div class="container">
+                        <div class="dreamHomesHeader dFlex justifyCenter alignCenter">
+                            <h2>we bring dream homes to reality</h2>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit
+                                            impedit nisi magni earum itaque blanditiis accusantium fugit ullam
+                                            officia placeat!
+                            </p>
+                        </div>
+                        <div class="dreamHomesMain dFlex justifyBetween">
+                            <div class="dreamHomesPicture">
+                                <img src="./assets/images/hero_2.jpg" alt=""/>
+                            </div>
+                            <div class="dreamHomeFeatures">
+                                <div class="dreamBox1 dFlex alignCenter">
+                                    <div class="dFlex justifyCenter alignCenter content">
+                                        <i class="fa fa-home"></i>
+                                    </div>
+                                    <div>
+                                        <h3>quality properties</h3>
+                                        <p>Lorem ipsum dolor sit amet.</p>
+                                    </div>
+                                </div>
+                                <div class="dreamBox2 dFlex alignCenter">
+                                    <div class="dFlex justifyCenter alignCenter content">
+                                        <i class="fa fa-user"></i>
+                                    </div>
+                                    <div>
+                                        <h3>top rated agents</h3>
+                                        <p>Lorem ipsum dolor sit amet.</p>
+                                    </div>
+                                </div>
+                                <div class="dreamBox3 dFlex alignCenter">
+                                    <div class="dFlex justifyCenter alignCenter content">
+                                        <i class="fa fa-shield-halved"></i>
+                                    </div>
+                                    <div>
+                                        <h3>easy and safe</h3>
+                                        <p>Lorem ipsum dolor sit amet.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="numbers dGrid">
+                            <div class="number1">
+                                <p>2,197</p>
+                                <span>buy properties</span>
+                            </div>
+                            <div class="number2">
+                                <p>3,918</p>
+                                <span>
+                                    sell properties</span>
+                            </div>
+                            <div class="number3">
+                                <p>3,928</p>
+                                <span>all properties
+                                </span>
+                            </div>
+                            <div class="number4">
+                                <p>1,291</p>
+                                <span>agents</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- our agents section -->
+                <section class="ourAgent">
+                    <div class="container">
+                        <div class="agentText dFlex justifyCenter alignCenter">
+                            <h3>our agents</h3>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae
+                                            soluta quae unde temporibus dolorum voluptatibus laborum quo odit
+                                            molestiae rerum?
+                            </p>
+                        </div>
+                        <div class="Agents dFlex">
+                            <div class="agent1">
+                                <div class="agentProfile1">
+                                    <img src="./assets/images/person_1.jpg" alt=""/>
+                                </div>
+                                <div class="agentDescription">
+                                    <h5>
+                                        <a href="#">james doe</a>
+                                    </h5>
+                                    <span>real state agent</span>
+                                    <p>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                                        Aliquam fugit sequi modi perspiciatis voluptatum accusamus.
+                                    </p>
+                                </div>
+                                <div class="agentSocial dFlex">
+                                    <div class="agentSocial1">
+                                        <i class="bx bxl-twitter"></i>
+                                    </div>
+                                    <div class="agentSocial2">
+                                        <i class="bx bxl-instagram"></i>
+                                    </div>
+                                    <div class="agentSocial3">
+                                        <i class="bx bxl-facebook"></i>
+                                    </div>
+                                    <div class="agentSocial4">
+                                        <i class="bx bxl-linkedin"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="agent2">
+                                <div class="agentProfile2">
+                                    <img src="./assets/images/person_2.jpg" alt=""/>
+                                </div>
+                                <div class="agentDescription">
+                                    <h5>
+                                        <a href="#">jean smith</a>
+                                    </h5>
+                                    <span>real state agent</span>
+                                    <p>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                                        Aliquam fugit sequi modi perspiciatis voluptatum accusamus.
+                                    </p>
+                                </div>
+                                <div class="agentSocial dFlex">
+                                    <div class="agentSocial1">
+                                        <i class="bx bxl-twitter"></i>
+                                    </div>
+                                    <div class="agentSocial2">
+                                        <i class="bx bxl-instagram"></i>
+                                    </div>
+                                    <div class="agentSocial3">
+                                        <i class="bx bxl-facebook"></i>
+                                    </div>
+                                    <div class="agentSocial4">
+                                        <i class="bx bxl-linkedin"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="agent3 dFlex">
+                                <div class="agentProfile3">
+                                    <img src="./assets/images/person_4.jpg" alt=""/>
+                                </div>
+                                <div class="agentDescription">
+                                    <h5>
+                                        <a href="#">davin smith</a>
+                                    </h5>
+                                    <span>real state agent</span>
+                                    <p>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                                        Aliquam fugit sequi modi perspiciatis voluptatum accusamus.
+                                    </p>
+                                </div>
+                                <div class="agentSocial dFlex">
+                                    <div class="agentSocial1">
+                                        <i class="bx bxl-twitter"></i>
+                                    </div>
+                                    <div class="agentSocial2">
+                                        <i class="bx bxl-instagram"></i>
+                                    </div>
+                                    <div class="agentSocial3">
+                                        <i class="bx bxl-facebook"></i>
+                                    </div>
+                                    <div class="agentSocial4">
+                                        <i class="bx bxl-linkedin"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <!-- footer -->
+            <footer>
+                <div class="container">
+                    <div class="footerSlogan dFlex alignCenter justifyBetween">
+                        <h3>be a part of our growing real state agent</h3>
+                        <a href="#">apply for real state agent</a>
+                    </div>
+                    <div
+                        class="footerElements dFlex justifyBetween">
+                        <!-- footer contact -->
+                        <div class="contactElement">
+                            <h3>Contact</h3>
+                            <address>43 Raymouth Rd. Baltemoer, London 3910</address>
+                            <ul>
+                                <li><a href="#">+1(123)-456-7890</a></li>
+                                <li><a href="">+1(123)-456-7890</a></li>
+                                <li><a href="">info@mydomain.com</a></li>
+                            </ul>
+                        </div>
+                        <!-- footer sources -->
+                        <div class="sources">
+                            <div class="sourcesElement">
+                                <h3>Sources</h3>
+                                <div class="elements dFlex ">
+                                    <div class="element1">
+                                        <ul>
+                                            <li>About us</li>
+                                            <li>Services</li>
+                                            <li>Vision</li>
+                                            <li>Mission</li>
+                                            <li>Terms</li>
+                                            <li>Privacy</li>
+                                        </ul>
+                                    </div>
+                                    <div class="element2">
+                                        <ul>
+                                            <li>Partners</li>
+                                            <li>Careers</li>
+                                            <li>Blog</li>
+                                            <li>Business</li>
+                                            <li>FAQ</li>
+                                            <li>Creative</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- footer links -->
+                        <div class="links">
+                            <div class="linkElement">
+                                <h3>Links</h3>
+                                <div class="elements1 dFlex">
+                                    <div class="element3">
+                                        <ul>
+                                            <li><a href="">Our Vision</a></li>
+                                            <li><a href="">About us</a></li>
+                                            <li><a href="">Contact us</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="element4 dFlex ">
+                                        <div class="socialLink linkSocial1">
+                                            <i class="bx bxl-twitter"></i>
+                                        </div>
+                                        <div class="socialLink linkSocial2">
+                                            <i class="bx bxl-instagram"></i>
+                                        </div>
+                                        <div class="socialLink linkSocial3">
+                                            <i class="bx bxl-facebook"></i>
+                                        </div>
+                                        <div class="socialLink linkSocial4">
+                                            <i class="bx bxl-linkedin"></i>
+                                        </div>
+                                        <div class="socialLink linkSocial5">
+                                            <i class="bx bxl-pinterest"></i>
+                                        </div>
+                                        <div class="socialLink linkSocial6">
+                                            <i class="bx bxl-dribbble"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- copyright -->
+                    <div class="copyright">
+                        <p>Copyright ©2023 All rights reserved | This template is made
+                                      with<i class="bx bxs-heart"></i>by Colorlib</p>
+                    </div>
+                </div>
+            </footer>
+        </body>
+    </body>
 </html>

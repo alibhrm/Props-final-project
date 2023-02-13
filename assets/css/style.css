@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+ 
 }
 :root {
   --primary-color: #1f6f8b;
@@ -802,7 +803,9 @@ footer {
     --primary-font: "Noto Sans JP", sans-serif;
     --secondary-color: #faf9f9;
   }
-
+header{
+  overflow-x: hidden;
+}
   .menu > ul {
     visibility: hidden;
   }
@@ -812,7 +815,7 @@ footer {
   }
   label .toggleMenu {
     position: absolute;
-    right: -100px;
+    right: 1%;
     top: -100px;
     z-index: 100;
     width: 200px;
@@ -864,7 +867,7 @@ footer {
   }
 
   label input:checked + .toggleMenu {
-    box-shadow: 0 0 0 100vw var(--secondary-color),
+    box-shadow: 0 0 0 10px var(--secondary-color),
       0 0 0 100vh var(--secondary-color);
     border-radius: 0;
   }
@@ -932,57 +935,65 @@ footer {
   .slogan input:nth-child(2) {
     padding: 20px 35px;
   }
-  .dreamHomesMain{
+  .dreamHomesMain {
     flex-direction: column;
   }
   .dreamHomesPicture::after {
-    content: '';
-   visibility: hidden;
+    content: "";
+    display: none;
   }
-  .propertyBox{
+  .propertyBox {
     flex-direction: column;
     align-items: center;
   }
-  .testimonial h2{
+  .testimonial h2 {
     padding-top: 100px;
     text-align: center;
   }
-  .comments{
+  .comments {
     flex-direction: column;
     align-items: center;
   }
-  .dreamHomesHeader > p{
+  .dreamHomesHeader > p {
     width: 200px;
   }
-  .dreamHomesMain img{
+  .dreamHomesMain img {
     width: 100%;
     height: auto;
   }
-  .dreamBox1, .dreamBox2 , .dreamBox3{
+  .dreamBox1,
+  .dreamBox2,
+  .dreamBox3 {
     flex-direction: column;
   }
-  .dreamHomeFeatures{
+  .dreamHomeFeatures {
     display: flex;
     flex-direction: row;
-    margin-top: -200px;
     margin-bottom: 200px;
   }
-.Agents{
-  flex-direction: column;
-  align-items: center;
-}
-.agent1, .agent2, .agent3{
-  width: 50%;
-  margin-bottom: 100px;
-}
-.footerSlogan a{
-  width: auto;
-  line-height: 0;
-}
-.footerElements{
-  flex-direction: column;
-}
-.agentText p {
-  width: 50%;
-}
+  .Agents {
+    flex-direction: column;
+    align-items: center;
+  }
+  .agent1,
+  .agent2,
+  .agent3 {
+    width: 100%;
+    margin-bottom: 100px;
+  }
+  .footerSlogan a {
+    width: auto;
+    line-height: 0;
+  }
+  .footerElements {
+    flex-direction: column;
+    margin-left: 20px;
+  }
+  .agentText p {
+    width: 50%;
+  }
+  .agentText {
+    width: 100%;
+  }
+  
 }
