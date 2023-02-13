@@ -145,6 +145,9 @@ ul {
   text-decoration: none;
 }
 /* editing slogan */
+form{
+  margin: 20px auto;
+}
 .slogan > h1 {
   font-family: var(--primary-font);
   color: var(--secondary-color);
@@ -153,7 +156,7 @@ ul {
 .slogan input:nth-child(1) {
   display: inline-block;
   padding: 20px 20px;
-  width: 65%;
+  width: 50%;
   border: none;
   border-radius: 30px;
 }
@@ -178,7 +181,7 @@ ul {
 }
 .slogan p {
   color: var(--secondary-color);
-  width: 600px;
+  width: 100%;
   text-align: center;
   font-family: var(--primary-font);
 }
@@ -735,7 +738,7 @@ footer {
   transition: all 0.3s ease;
 }
 .elements {
-  justify-content: space-around;
+gap: 30px;
 }
 .linkElement h3 {
   font-size: 12px;
@@ -805,6 +808,7 @@ footer {
   }
 header{
   overflow-x: hidden;
+
 }
   .menu > ul {
     visibility: hidden;
@@ -815,11 +819,11 @@ header{
   }
   label .toggleMenu {
     position: absolute;
-    right: 1%;
+    right: 10%;
     top: -100px;
     z-index: 100;
-    width: 200px;
-    height: 190px;
+    width: 15%;
+    height: 10%;
     background: var(--secondary-color);
     /* border-radius: 50% 50% 50% 50%; */
     -webkit-transition: 0.5s ease-in-out;
@@ -930,7 +934,7 @@ header{
     gap: 20px;
   }
   .slogan > h1 {
-    padding-bottom: 60px;
+    padding-bottom: 165px;
   }
   .slogan input:nth-child(2) {
     padding: 20px 35px;

@@ -1,182 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact us</title>
-    <!-- css -->
-    <link rel="stylesheet" href="./assets/css/ContactUs.css">
-    <!-- cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact us</title>
+        <!-- css -->
+        <link
+        rel="stylesheet" href="./assets/css/ContactUs.css">
+        <!-- cdn -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    </head>
 
-<body>
-    <!-- header -->
-    <header>
-        <!-- main-menu -->
-        <div class="container">
-            <nav class="navBar dGrid alignCenter">
-                <!-- logo -->
-                <div class="logo">props</div>
-                <!-- menu -->
-                <div class="menu">
-                    <ul class="dGrid">
-                        <li><a href="index.html">home</a></li>
-                        <li>
-                            <a href="" class="property"> properties</a>
-                            <!-- dropdwonmenu -->
-                            <ul class="dropDown">
-                                <li class="item buy"><a href="#">buy property</a></li>
-                                <li class="item sell"><a href="#">sell property</a></li>
-                                <li class="item" id="dropDown2">
-                                    <a href="#">drop down</a>
-                                    <ul class="dropDown-2">
-                                        <li class="item buy"><a href="#">sub one</a></li>
-                                        <li class="item sell"><a href="#">sub two</a></li>
-                                        <li class="item dropDown2"><a href="#">sub three</a></li>
-                                    </ul>
-                                </li>
+    <body>
+        <!-- header -->
+        <header>
+            <!-- main-menu -->
+            <div class="container">
+                <nav
+                    class="navBar dGrid alignCenter">
+                    <!-- logo -->
+                    <div class="logo">props</div>
+                    <!-- menu -->
+                    <div class="menu">
+                        <ul class="dGrid">
+                            <li>
+                                <a href="index.html">home</a>
+                            </li>
+                            <li>
+                                <a href="" class="property">
+                                    properties</a>
+                                <!-- dropdwonmenu -->
+                                <ul class="dropDown">
+                                    <li class="item buy">
+                                        <a href="#">buy property</a>
+                                    </li>
+                                    <li class="item sell">
+                                        <a href="#">sell property</a>
+                                    </li>
+                                    <li class="item" id="dropDown2">
+                                        <a href="#">drop down</a>
+                                        <ul class="dropDown-2">
+                                            <li class="item buy">
+                                                <a href="#">sub one</a>
+                                            </li>
+                                            <li class="item sell">
+                                                <a href="#">sub two</a>
+                                            </li>
+                                            <li class="item dropDown2">
+                                                <a href="#">sub three</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="">services</a>
+                            </li>
+
+                            <li>
+                                <a href="">about</a>
+                            </li>
+
+                            <li>
+                                <a href="">contact us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <!-- Slogan -->
+                <div class="slogan dFlex justifyCenter alignCenter">
+                    <h1>CONTACT US</h1>
+                    <p>
+                        <span>
+                            <a href="index.html">Home</a>
+                        </span>
+                        / Contact Us</p>
+                </div>
+                <!-- Togglemenu -->
+                <div class="hamburgerMenu">
+                    <label>
+                        <input type="checkbox">
+                        <span class="toggleMenu">
+                            <span class="hamburger"></span>
+                        </span>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="ContactUs.html">Contact</a></li>
+                            <li><a href="#">Services</a></li>
+                        </ul>
+                    </label>
+                </div>
+            </header>
+
+            <main>
+                <!--Form-->
+                <div class="container">
+                    <div>
+                        <div class="getInTouch">
+                            <h2>get in touch</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam enim pariatur similique debitis
+                                                        vel
+                                                        nisi qui reprehenderit totam? Quod maiores.</p>
+                        </div>
+                        <div class="Form dFlex">
+                            <form action="" target="_blank" method="post" class="dFlex ">
+                                <input type="text" placeholder="Name" name="name">
+                                <input type="email" placeholder="Email Address" name="email">
+                                <input type="text" placeholder="Subject" name="subject">
+                                <input type="number" placeholder="Phone" name="phone">
+                                <textarea placeholder="Write yore message here..." name="message"></textarea>
+                                <button>
+                                    <span>Send Message</span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <!-- footer -->
+            <footer>
+                <div class="container">
+                    <div class="footerSlogan dFlex alignCenter justifyBetween">
+                        <h3>be a part of our growing real state agent</h3>
+                        <a href="#">apply for real state agent</a>
+                    </div>
+                    <div
+                        class="footerElements dFlex justifyBetween">
+                        <!-- footer contact -->
+                        <div class="contactElement">
+                            <h3>Contact</h3>
+                            <address>43 Raymouth Rd. Baltemoer, London 3910</address>
+                            <ul>
+                                <li><a href="#">+1(123)-456-7890</a></li>
+                                <li><a href="">+1(123)-456-7890</a></li>
+                                <li><a href="">info@mydomain.com</a></li>
                             </ul>
-                        </li>
-
-                        <li><a href="">services</a></li>
-
-                        <li><a href="">about</a></li>
-
-                        <li><a href="">contact us</a></li>
-                    </ul>
-                </div>
-            </nav>
-            <!-- Slogan -->
-            <div class="slogan dFlex justifyCenter alignCenter">
-                <h1>CONTACT US</h1>
-                <p><span><a href="index.html">Home</a></span> / Contact Us</p>
-            </div>
-            <!-- Togglemenu -->
-            <div class="hamburgerMenu">
-                <label>
-                    <input type="checkbox">
-                    <span class="toggleMenu"> <span class="hamburger"></span> </span>
-                    <ul>
-                        <li> <a href="index.html">Home</a> </li>
-                        <li> <a href="#">About</a> </li>
-                        <li> <a href="ContactUs.html">Contact</a> </li>
-                        <li> <a href="#">Services</a> </li>
-                    </ul>
-                </label>
-            </div>
-    </header>
-
-    <main>
-        <!--Form-->
-        <div class="container">
-            <div>
-                <div>
-                    <h2>get in touch</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam enim pariatur similique debitis
-                        vel
-                        nisi qui reprehenderit totam? Quod maiores.</p>
-                </div>
-                <div>
-                    <form action="" target="_blank" method="post">
-                        <input type="text" placeholder="Name" name="name">
-                        <input type="email" placeholder="Email Address" name="email">
-                        <input type="text" placeholder="Subject" name="subject">
-                        <input type="number" placeholder="Phone" name="phone">
-                        <textarea placeholder="Write yore message here..." name="message"></textarea>
-                        <button><span>Send Message</span></button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </main>
-    <!-- footer -->
-    <footer>
-        <div class="container">
-            <div class="footerSlogan dFlex alignCenter justifyBetween">
-                <h3>be a part of our growing real state agent</h3><a href="#">apply for real state agent</a>
-            </div>
-            <div class="footerElements dGrid">
-                <!-- footer contact -->
-                <div class="contactElement">
-                    <h3>Contact</h3>
-                    <address>43 Raymouth Rd. Baltemoer, London 3910</address>
-                    <ul>
-                        <li>
-                            <a href="#">+1(123)-456-7890</a>
-                        </li>
-                        <li>
-                            <a href="">+1(123)-456-7890</a>
-                        </li>
-                        <li>
-                            <a href="">info@mydomain.com</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- footer sources -->
-                <div class="sources">
-                    <div class="sourcesElement">
-                        <h3>Sources</h3>
-                        <div class="elements dFlex ">
-                            <div class="element1">
-                                <ul>
-                                    <li>About us</li>
-                                    <li>Services</li>
-                                    <li>Vision</li>
-                                    <li>Mission</li>
-                                    <li>Terms</li>
-                                    <li>Privacy</li>
-                                </ul>
+                        </div>
+                        <!-- footer sources -->
+                        <div class="sources">
+                            <div class="sourcesElement">
+                                <h3>Sources</h3>
+                                <div class="elements dFlex ">
+                                    <div class="element1">
+                                        <ul>
+                                            <li>About us</li>
+                                            <li>Services</li>
+                                            <li>Vision</li>
+                                            <li>Mission</li>
+                                            <li>Terms</li>
+                                            <li>Privacy</li>
+                                        </ul>
+                                    </div>
+                                    <div class="element2">
+                                        <ul>
+                                            <li>Partners</li>
+                                            <li>Careers</li>
+                                            <li>Blog</li>
+                                            <li>Business</li>
+                                            <li>FAQ</li>
+                                            <li>Creative</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="element2">
-                                <ul>
-                                    <li>Partners</li>
-                                    <li>Careers</li>
-                                    <li>Blog</li>
-                                    <li>Business</li>
-                                    <li>FAQ</li>
-                                    <li>Creative</li>
-                                </ul>
+                        </div>
+                        <!-- footer links -->
+                        <div class="links">
+                            <div class="linkElement">
+                                <h3>Links</h3>
+                                <div class="elements1 dFlex">
+                                    <div class="element3">
+                                        <ul>
+                                            <li><a href="">Our Vision</a></li>
+                                            <li><a href="">About us</a></li>
+                                            <li><a href="">Contact us</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="element4 dFlex ">
+                                        <div class="socialLink linkSocial1">
+                                            <i class="bx bxl-twitter"></i>
+                                        </div>
+                                        <div class="socialLink linkSocial2">
+                                            <i class="bx bxl-instagram"></i>
+                                        </div>
+                                        <div class="socialLink linkSocial3">
+                                            <i class="bx bxl-facebook"></i>
+                                        </div>
+                                        <div class="socialLink linkSocial4">
+                                            <i class="bx bxl-linkedin"></i>
+                                        </div>
+                                        <div class="socialLink linkSocial5">
+                                            <i class="bx bxl-pinterest"></i>
+                                        </div>
+                                        <div class="socialLink linkSocial6">
+                                            <i class="bx bxl-dribbble"></i>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- footer links -->
-                <div class="links">
-                    <div class="linkElement">
-                        <h3>Links</h3>
-                        <div class="elements1 dFlex">
-                            <div class="element3">
-                                <ul>
-                                    <li><a href="">Our Vision</a></li>
-                                    <li><a href="">About us</a></li>
-                                    <li><a href="">Contact us</a></li>
-                                </ul>
-                            </div>
-                            <div class="element4 dFlex ">
-                                <div class="socialLink linkSocial1"><i class="bx bxl-twitter"></i></div>
-                                <div class="socialLink linkSocial2"><i class="bx bxl-instagram"></i></div>
-                                <div class="socialLink linkSocial3"><i class="bx bxl-facebook"></i></div>
-                                <div class="socialLink linkSocial4"><i class="bx bxl-linkedin"></i></div>
-                                <div class="socialLink linkSocial5"><i class="bx bxl-pinterest"></i></div>
-                                <div class="socialLink linkSocial6"><i class="bx bxl-dribbble"></i></div>
-                            </div>
-                        </div>
+                    <!-- copyright -->
+                    <div class="copyright">
+                        <p>Copyright ©2023 All rights reserved | This template is made
+                                                          with<i class="bx bxs-heart"></i>by Colorlib</p>
                     </div>
                 </div>
-            </div>
-            <!-- copyright -->
-            <div class="copyright">
-                <p>Copyright ©2023 All rights reserved | This template is made
-                    with<i class="bx bxs-heart"></i>by Colorlib</p>
-            </div>
-        </div>
-    </footer>
-</body>
-
+            </footer>
+        </body>
+    </body>
 </html>
